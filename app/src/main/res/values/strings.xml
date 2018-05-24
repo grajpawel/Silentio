@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Silentio</string>
+    <string name="action_settings_label">Settings</string>
+    <string name="enable_app_label">Enable the app</string>
+    <string name="location_permissions_label">Location permissions</string>
+    <string name="ringer_permissions_label">Ringer permissions</string>
+    <string name="radius_label">Target radius</string>
+
+    <string name="pref_enable_app_true">App is running</string>
+    <string name="pref_enable_app_false">App is disabled</string>
+
+    <string name="pref_permissions_true">Granted</string>
+    <string name="pref_permissions_false">App needs your approval</string>
+    <string name="pref_distance_label">Radius</string>
+    <string name="need_notification_permission_message">Give all the required permissions first</string>
+    <string name="silent_mode_activated_without_name">Silent mode activated</string>
+    <string name="silent_mode_activated_with_name">You entered</string>
+
+    <string name="touch_to_relaunch">Touch to launch the app.</string>
+    <string name="back_to_normal">Back to normal</string>
+    <string name="app_off">App is off</string>
+    <string name="privacy">http://www.google.com/policies/privacy</string>
+    <string name="notifications_label">Show notifications</string>
+    <string name="channel_label">Muting and unmuting</string>
+    <string name="pick_location_label">Pick a place</string>
+    <string name="pick_new_location_label">Add a new place</string>
+    <string name="pick_radius_error_text">Please select a distance between 50 and 1000 metres</string>
+    <string name="accept_place_button_label">Done!</string>
+    <string name="change_location_label">Change location</string>
+    <string name="pick_new_place_launcher_label">New place</string>
+    <string name="pref_name_label">Name</string>
+    <string name="pref_name_hint">Optional</string>
+    <string name="your_places">Your places</string>
+    <string name="item_delete">Delete this place</string>
+    <string name="place_edit">Edit a place</string>
+    <string name="silent_label">Silent mode</string>
+    <string name="empty_info">It\'s empty here :(</string>
+    <string name="vibrations_label">Vibrations</string>
+    <string name="action">Default action</string>
+    <string name="time_constraints">Time constraints</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="active_days">Days</string>
+    <string name="everyday">Everyday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="unmute_after_time">Unmute after end time</string>
+    <string name="action_save">Save</string>
+    <string name="action_accept">Accept</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="always">Always</string>
+    <string name="never">Never</string>
+    <string name="active_place">Active place</string>
+    <string name="no_internet">Internet connection is needed for this</string>
+    <string name="geofence_limit_reached">You need to delete a place first</string>
+
+
+
+
+
+    <string name="silent_pref" translatable="false">silent_mode</string>
+    <string name="vibrations_pref" translatable="false">vibrations</string>
+    <string name="tag_key" translatable="false">TAG_KEY</string>
+    <string name="enable_app_key" translatable="false">enable_app</string>
+    <string name="location_permissions_key" translatable="false">location_permissions</string>
+    <string name="ringer_permissions_key" translatable="false">ringer_permissions</string>
+    <string name="pref_unit_metres_value" translatable="false">metres</string>
+    <string name="pref_unit_yards_value" translatable="false">yards</string>
+    <string name="pref_unit_key" translatable="false">unit</string>
+    <string name="pref_radius_key" translatable="false">radius</string>
+    <string name="shared_preferences_key" translatable="false">sharedpreferenceskey</string>
+    <string name="notifications_key" translatable="false">NOTIFICATIONS_KEY</string>
+    <string name="active_place_id" translatable="false">active_place_id</string>
+
+
+
+</resources>

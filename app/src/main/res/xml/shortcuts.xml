@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="compose"
+        android:enabled="true"
+        android:icon="@drawable/addplacelaunchericon"
+        android:shortcutShortLabel="@string/pick_new_place_launcher_label"
+        android:shortcutLongLabel="@string/pick_new_place_launcher_label"
+        android:shortcutDisabledMessage="@string/pick_new_place_launcher_label"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.paplo.silentio"
+            android:targetClass="com.paplo.silentio.PlacePickerActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>

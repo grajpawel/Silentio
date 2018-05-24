@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Silentio</string>
+    <string name="action_settings_label">Ustawienia</string>
+    <string name="enable_app_label">Włącz aplikację</string>
+    <string name="location_permissions_label">Dostęp do lokalizacji</string>
+    <string name="ringer_permissions_label">Dostęp do dzwonka</string>
+    <string name="radius_label">Promień działania</string>
+
+    <string name="pref_enable_app_true">Aplikacja działa</string>
+    <string name="pref_enable_app_false">Aplikacja nie działa</string>
+
+    <string name="pref_permissions_true">Pozwolono</string>
+    <string name="pref_permissions_false">Aplikacja potrzebuje Twojej zgody</string>
+    <string name="pref_distance_label">Promień działania</string>
+    <string name="need_notification_permission_message">Najpierw nadaj aplikacji potrzebne pozwolenia</string>
+    <string name="silent_mode_activated_without_name">Tryb cichy aktywowany</string>
+    <string name="silent_mode_activated_with_name">Jesteś w:</string>
+
+    <string name="touch_to_relaunch">Dotknij aby otworzyć aplikację</string>
+    <string name="back_to_normal">Powrót do trybu normalnego</string>
+    <string name="app_off">Aplikacja jest wyłączona</string>
+    <string name="privacy">http://www.google.com/policies/privacy</string>
+    <string name="notifications_label">Pokaż powiadomienia</string>
+    <string name="channel_label">Wyciszanie i odciszanie</string>
+    <string name="pick_location_label">Wybierz miejsce</string>
+    <string name="pick_new_location_label">Dodaj nowe miejsce</string>
+
+    <string name="pick_radius_error_text">Wybierz odległość pomiędzy 50 a 1000 metrów</string>
+    <string name="accept_place_button_label">Zrobione!</string>
+    <string name="change_location_label">Zmień miejsce</string>
+    <string name="pick_new_place_launcher_label">Nowe miejsce</string>
+    <string name="pref_name_label">Nazwa</string>
+    <string name="pref_name_hint">Opcjonalna</string>
+    <string name="your_places">Twoje miejsca</string>
+    <string name="item_delete">Usuń to miejsce</string>
+    <string name="place_edit">Edytuj miejsce</string>
+    <string name="silent_label">Wyciszenie</string>
+    <string name="vibrations_label">Wibracje</string>
+    <string name="action">Domyślna akcja</string>
+    <string name="empty_info">Pusto tu :(</string>
+    <string name="time_constraints">Granice czasowe</string>
+    <string name="start_time">Czas początkowy</string>
+    <string name="end_time">Czas końcowy</string>
+    <string name="everyday">Codziennie</string>
+    <string name="active_days">Dni</string>
+    <string name="monday">Poniedziałek</string>
+    <string name="tuesday">Wtorek</string>
+    <string name="wednesday">Środa</string>
+    <string name="thursday">Czwartek</string>
+    <string name="friday">Piątek</string>
+    <string name="saturday">Sobota</string>
+    <string name="sunday">Niedziela</string>
+    <string name="unmute_after_time">Odcisz po upływie czasu</string>
+    <string name="action_save">Zapisz</string>
+    <string name="action_accept">Akceptuj</string>
+    <string name="action_cancel">Anuluj</string>
+    <string name="always">Zawsze</string>
+    <string name="never">Nigdy</string>
+    <string name="active_place">Aktywne miejsce</string>
+    <string name="no_internet">Do tego potrzebny jest dostęp do internetu</string>
+    <string name="geofence_limit_reached">Najpierw usuń jedno ze swoich miejsc</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

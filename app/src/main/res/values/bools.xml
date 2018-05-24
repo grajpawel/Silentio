@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="pref_enable_app">true</bool>
+    <bool name="location_permissions">false</bool>
+    <bool name="ringer_permissions">false</bool>
+</resources>
