@@ -19,7 +19,6 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.PlaceBuffer;
 import com.google.android.gms.location.places.Places;
-import com.paplo.silentio.GeofenceService;
 import com.paplo.silentio.provider.PlaceContract;
 
 import java.util.ArrayList;
