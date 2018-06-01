@@ -25,7 +25,8 @@
                 android:paddingBottom="4dp"
                 android:paddingRight="12dp"
                 android:paddingTop="4dp"
-                app:srcCompat="@drawable/ic_gps_fixed_black_24dp" />
+                app:srcCompat="@drawable/ic_gps_fixed_black_24dp"
+                android:contentDescription="@string/cd_gps_fixed" />
 
             <TextView
                 android:layout_width="wrap_content"

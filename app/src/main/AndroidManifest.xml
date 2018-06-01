@@ -19,7 +19,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDrEWsK7660Zgbdvov71Uk5kFk8MMgNW4E" />
+            android:value="AIzaSyAW_U-YbfBfZRXZCEtjMWQbqiz7BGjxMJI" />
 
         <activity
             android:name=".MainActivity"
@@ -73,13 +73,13 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.USER_PRESENT" />
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+
         <receiver android:name=".GeofenceBroadcastReceiver"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="false" />
 
         <service
             android:name=".GeofenceTransitionsJobIntentService"

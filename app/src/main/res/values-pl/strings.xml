@@ -60,19 +60,8 @@
     <string name="active_place">Aktywne miejsce</string>
     <string name="no_internet">Do tego potrzebny jest dostęp do internetu</string>
     <string name="geofence_limit_reached">Najpierw usuń jedno ze swoich miejsc</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <string name="gps_fixed" />
+    <string name="cd_gps_fixed" />
 
 
 </resources>

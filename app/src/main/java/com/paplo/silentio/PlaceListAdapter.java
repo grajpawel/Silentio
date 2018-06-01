@@ -2,16 +2,12 @@ package com.paplo.silentio;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Color;
-import android.graphics.ColorMatrix;
-import android.graphics.ColorMatrixColorFilter;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
 import android.os.Build;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,16 +18,12 @@ import android.widget.TextView;
 
 import com.google.android.gms.location.places.PlaceBuffer;
 import com.paplo.silentio.provider.PlaceContract;
-import com.paplo.silentio.provider.PlaceDbHelper;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
-
-import static android.content.Context.MODE_PRIVATE;
-import static com.paplo.silentio.DetailActivity.placeAddress;
 
 
 public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.PlaceViewHolder> {
@@ -41,11 +33,6 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.Plac
     private List<String> placeNames;
     private List<String> placeRingers;
     public static String activeId;
-    public static String activePlaceName;
-    public static String activePlaceAddress;
-    private Geocoder geocoder;
-
-
 
 
     PlaceListAdapter(Context context, PlaceBuffer places){
@@ -58,8 +45,9 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.Plac
 
     }
 
+    @NonNull
     @Override
-    public PlaceListAdapter.PlaceViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
+    public PlaceListAdapter.PlaceViewHolder onCreateViewHolder(@NonNull final ViewGroup parent, int viewType) {
         Log.d(TAG, "View Created");
 
         LayoutInflater inflater = LayoutInflater.from(mContext);
@@ -91,10 +79,10 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.Plac
 
 
     @Override
-    public void onBindViewHolder(final PlaceViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final PlaceViewHolder holder, final int position) {
 
         List<Address> addresses = null;
-        geocoder = new Geocoder(mContext, Locale.getDefault());
+        Geocoder geocoder = new Geocoder(mContext, Locale.getDefault());
         try {
             addresses = geocoder.getFromLocation(mPlaces.get(position).getLatLng().latitude, mPlaces.get(position).getLatLng().longitude, 1);
         } catch (IOException e) {
@@ -102,11 +90,11 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.Plac
         }
 
         String placeNameFromDataBase = placeNames.get(position);
-        String placeName = null;
-        String placeAddress = null;
+        String placeName;
+        String placeAddress;
         if (placeNameFromDataBase != null && !placeNameFromDataBase.isEmpty()){
             placeName = placeNameFromDataBase;
-            placeAddress = mPlaces.get(position).getAddress().toString();
+            placeAddress = Objects.requireNonNull(mPlaces.get(position).getAddress()).toString();
 
         } else {
             if (addresses != null) {
@@ -122,19 +110,13 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.Plac
 
                 }
             } else {
-                if (placeNameFromDataBase != null && !placeNameFromDataBase.isEmpty()){
-                    placeName = placeNames.get(position);
-                } else {
 
-                    placeName = mPlaces.get(position).getName().toString();
-                }
-                placeAddress = mPlaces.get(position).getAddress().toString();
+                placeName = mPlaces.get(position).getName().toString();
+                placeAddress = Objects.requireNonNull(mPlaces.get(position).getAddress()).toString();
 
 
             }
         }
-        activePlaceAddress = placeAddress;
-        activePlaceName = placeName;
         if (placeRingers.get(position).equals(mContext.getString(R.string.silent_pref))){
             holder.iconImageView.setImageResource(R.drawable.ic_volume_off_black_24dp);
         } else {

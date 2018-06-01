@@ -1,21 +1,20 @@
 package com.paplo.silentio;
 
         import android.app.NotificationManager;
-        import android.content.Context;
-        import android.content.Intent;
-        import android.content.SharedPreferences;
-        import android.content.pm.PackageManager;
-        import android.os.Build;
-        import android.os.Bundle;
-        import android.provider.Settings;
-        import android.support.annotation.RequiresApi;
-        import android.support.v4.app.ActivityCompat;
-        import android.support.v4.app.NavUtils;
-        import android.support.v7.app.ActionBar;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.MenuItem;
-        import android.view.View;
-        import android.widget.CheckBox;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.provider.Settings;
+import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
 
 public class SettingsActivity extends AppCompatActivity {
     private static final int PERMISSIONS_REQUEST_FINE_LOCATION = 101;
@@ -56,7 +55,6 @@ public class SettingsActivity extends AppCompatActivity {
         super.onResume();
 
         SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.shared_preferences_key), MODE_PRIVATE);
-        boolean createNotifications = sharedPreferences.getBoolean(getString(R.string.notifications_key), true);
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         CheckBox ringerPermissions = findViewById(R.id.ringer_permission_checkbox);
 

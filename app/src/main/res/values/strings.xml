@@ -76,7 +76,8 @@
     <string name="shared_preferences_key" translatable="false">sharedpreferenceskey</string>
     <string name="notifications_key" translatable="false">NOTIFICATIONS_KEY</string>
     <string name="active_place_id" translatable="false">active_place_id</string>
-
+    <string name="gps_fixed" />
+    <string name="cd_gps_fixed" />
 
 
 </resources>

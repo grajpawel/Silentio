@@ -10,8 +10,8 @@ android {
         applicationId "com.paplo.silentio"
         minSdkVersion 21
         targetSdkVersion 27
-        versionCode 24
-        versionName "2.4"
+        versionCode 26
+        versionName "2.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }

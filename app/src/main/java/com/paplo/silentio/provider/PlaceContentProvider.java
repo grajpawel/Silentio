@@ -12,6 +12,8 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
+import java.util.Objects;
+
 /**
  * Created by grajp_000 on 13.10.2017.
  */
@@ -57,7 +59,7 @@ public class PlaceContentProvider extends ContentProvider{
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
         }
-        retCursor.setNotificationUri(getContext().getContentResolver(), uri);
+        retCursor.setNotificationUri(Objects.requireNonNull(getContext()).getContentResolver(), uri);
         return retCursor;
     }
 
@@ -86,7 +88,7 @@ public class PlaceContentProvider extends ContentProvider{
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
         }
-        getContext().getContentResolver().notifyChange(uri, null);
+        Objects.requireNonNull(getContext()).getContentResolver().notifyChange(uri, null);
         return returnUri;
     }
 
@@ -104,7 +106,7 @@ public class PlaceContentProvider extends ContentProvider{
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
         }
         if (placesDeleted != 0){
-            getContext().getContentResolver().notifyChange(uri, null);
+            Objects.requireNonNull(getContext()).getContentResolver().notifyChange(uri, null);
         }
         return placesDeleted;
     }
@@ -123,7 +125,7 @@ public class PlaceContentProvider extends ContentProvider{
                 throw new UnsupportedOperationException("Uknown uri: " + uri);
         }
         if (placesUpdated != 0){
-            getContext().getContentResolver().notifyChange(uri, null);
+            Objects.requireNonNull(getContext()).getContentResolver().notifyChange(uri, null);
         }
         return placesUpdated;
     }
