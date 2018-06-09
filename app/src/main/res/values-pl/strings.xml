@@ -62,6 +62,9 @@
     <string name="geofence_limit_reached">Najpierw usuń jedno ze swoich miejsc</string>
     <string name="gps_fixed" />
     <string name="cd_gps_fixed" />
+    <string name="place_added">Miejsce dodane</string>
+    <string name="place_deleted">Miejsce usunięte</string>
+    <string name="place_changed">Miejsce zmienione</string>
 
 
 </resources>

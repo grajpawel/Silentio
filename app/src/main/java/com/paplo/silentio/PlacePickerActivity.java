@@ -29,6 +29,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -284,6 +285,9 @@ public class PlacePickerActivity extends AppCompatActivity {
         Log.d(TAG, "Final time constraints: " + timeConstraints);
         Log.d(TAG, "Final start time: " + startTimeLong);
         Log.d(TAG, "Final end time: " + endTimeLong);
+
+        Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.place_added), Toast.LENGTH_SHORT);
+        toast.show();
 
 
 

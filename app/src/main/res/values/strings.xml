@@ -58,6 +58,9 @@
     <string name="active_place">Active place</string>
     <string name="no_internet">Internet connection is needed for this</string>
     <string name="geofence_limit_reached">You need to delete a place first</string>
+    <string name="place_added">Place added</string>
+    <string name="place_deleted">Place deleted</string>
+    <string name="place_changed">Place changed</string>
 
 
 

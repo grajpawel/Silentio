@@ -10,8 +10,8 @@ android {
         applicationId "com.paplo.silentio"
         minSdkVersion 21
         targetSdkVersion 27
-        versionCode 26
-        versionName "2.6"
+        versionCode 27
+        versionName "2.7"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -37,7 +37,7 @@ dependencies {
     implementation 'com.google.maps.android:android-maps-utils:0.4.4'
     implementation 'com.android.support:preference-v7:27.1.1'
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.google.android.gms:play-services-places:15.0.1'

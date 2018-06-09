@@ -32,6 +32,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -281,6 +282,8 @@ public class DetailActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_delete) {
             db.delete(PlaceContract.PlaceEntry.TABLE_NAME, "placeID=?", new String[]{placeId});
+            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.place_deleted), Toast.LENGTH_SHORT);
+            toast.show();
             returnToMain();
             return true;
         } else if (id == R.id.action_save){
@@ -330,6 +333,9 @@ public class DetailActivity extends AppCompatActivity {
 
         //getContentResolver().update(PlaceContract.PlaceEntry.CONTENT_URI, contentValues, "placeID='"+placeId+"'", null);
         db.update(PlaceContract.PlaceEntry.TABLE_NAME, contentValues, "placeID='"+placeId+"'", null);
+
+        Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.place_changed), Toast.LENGTH_SHORT);
+        toast.show();
         returnToMain();
 
 
@@ -445,8 +451,6 @@ public class DetailActivity extends AppCompatActivity {
         endTimePickerFragment.show(getFragmentManager(), "startTimePickerDetail");
     }
 
-
-
     public void showDayPicker(View view) {
 
 
@@ -504,8 +508,6 @@ public class DetailActivity extends AppCompatActivity {
         dialog.show();
 
     }
-
-
 
     public void setTimeTextViews(String tag, String time, long timeInMillis){
         if (tag.equals("endTimePickerDetail")){
